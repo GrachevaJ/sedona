@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="page-header">
@@ -35,15 +36,14 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button" href="#">
-              <span class="visually-hidden">Хочу сюда</span>
-            </a>
+            <button class="navigation-link-user button" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-inner">
+      <div class="inner-filter">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -166,10 +166,11 @@
             </ul>
           </fieldset>
 
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="reset">Сбросить</button>
+          <button class="button apply-filter-button" type="submit">Применить</button>
+          <button class="button reset-filter-button" type="reset">Сбросить</button>
         </form>
-
+      </div>
+        <p class="filter-result">Найдено гостиниц: <span class="filter-result-count">38</span></p>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -254,20 +255,20 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-current button">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link button" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link button" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="pagination-link button" href="#">4</a>
           </li>
-          <li class="pagination-gap">...</li>
+          <li class="pagination-link pagination-gap button">...</li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">10</a>
+            <a class="pagination-link pagination-next button" href="#">10</a>
           </li>
         </ul>
       </section>
@@ -293,7 +294,7 @@
             name="newsletter-email"
             placeholder="Ваш e-mail"
           />
-          <button class="button" type="submit">Подписаться</button>
+          <button class="button submit-button" type="submit">Подписаться</button>
         </form>
       </section>
 
