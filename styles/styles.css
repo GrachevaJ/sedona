@@ -14,13 +14,44 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #FFF;
   color: #000;
-  text-align: center;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-header {
+  width: 1200px;
+  margin: 0 70px;
+}
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 70px;
+}
+
+.navigation-user {
+  width: 268px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 507px;
+  margin-right: 285px;
 }
 
 .navigation-link,
@@ -108,12 +139,21 @@ button.navigation-link-user {
   font-weight: 400;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 70px;
+}
 
 .hero {
   height: 485px;
   background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.welcome {
+  display: block;
+  margin: 0 auto;
 }
 
 .inner-filter {
@@ -181,9 +221,73 @@ button.navigation-link-user {
   color: #333;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 385px;
+}
+
+.advantages-item-photo {
+  width: 800px;
+}
+
+.advantages-item:nth-child(3),
+.advantages-item:nth-child(5),
+.quality-item:nth-child(odd) {
+  background-color: #83B3D31E;
+}
+
+.advantages-item:nth-child(4) {
+  background-color: #83B3D333;
+}
+
 .advantages-list li:is(:first-child, :last-child) {
   color: #FFF;
   background-color: #82B3D3;
+}
+
+.quality-list {
+  display: flex;
+}
+
+.quality-item {
+  width: 400px;
+  height: 385px;
+}
+
+.hotel-list {
+  display: flex;
+  width: 1200px;
+  margin: 0 70px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+.hotel-card {
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 340px;
+}
+
+.pagination {
+  display: flex;
+  width: 1200px;
+  gap: 8px;
+  margin: 0 70px;
+  padding: 0;
+}
+
+.newsletter {
+  text-align: center;
 }
 
 .hotel-search-button,
@@ -234,4 +338,37 @@ li {
 .pagination-gap {
   color: #000;
   background-color: transparent;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 70px;
+  padding: 0;
+  flex-direction: row;
+}
+
+.catalog-hotels {
+  display: flex;
+}
+
+.catalog-filter {
+  display: flex;
+  width: 1200px;
+  margin: 0 70px;
+  padding: 0;
+
+}
+
+.left-filter {
+  width: 371px;
+  margin-right: auto;
+  display: flex;
+  gap: 70px;
+}
+
+.right-filter {
+  width: 549px;
+  display: flex;
+  gap: 70px;
 }
