@@ -166,7 +166,6 @@ ul, li {
 }
 
 .navigation-link-current {
-  /* display: inline-block; */
   border-bottom: 2px solid #756257;
 }
 
@@ -180,6 +179,7 @@ ul, li {
   outline: none;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 button.navigation-link-user {
@@ -212,6 +212,7 @@ button.navigation-link-user {
   height: 52px;
   border-radius: 4px 0 0 4px;
   border: none;
+  padding: 14px 20px;
 }
 
 .submit-button {
@@ -229,6 +230,8 @@ button.navigation-link-user {
   background-color: #82b3d3;
   width: 191px;
   height: 36px;
+  margin-bottom: 32px;
+  margin-top: 56px;
 }
 
 .reset-filter-button {
@@ -585,7 +588,12 @@ button.navigation-link-user {
   margin: 0 70px;
   padding: 0;
   text-align: center;
-  margin-bottom: 156px;
+  margin-bottom: 60px;
+}
+
+.newsletter {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .newsletter-index {
@@ -603,9 +611,18 @@ button.navigation-link-user {
   padding: 0 362.5px;
 }
 
-.newsletter {
-  text-align: center;
-  margin-bottom: 40px;
+.newsletter-inner {
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+
+.newsletter-inner .newsletter-description {
+  margin: 20px 0 54px;
+  padding: 0 362.5px;
+}
+
+.newsletter-inner .newsletter-email-input {
+  background-color: #F2F2F2;
 }
 
 .hotel-search-button,
@@ -736,14 +753,14 @@ button.navigation-link-user {
   gap: 16px;
 }
 
-.control {
+.left-filter .control {
   display: inline-flex;
   align-items: center;
   gap: 16px;
   cursor: pointer;
 }
 
-.control-input {
+.left-filter .control-input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -751,7 +768,7 @@ button.navigation-link-user {
   clip: rect(0 0 0 0);
 }
 
-.control-label {
+.left-filter .control-label {
   position: relative;
   padding-left: 36px;
   display: inline-block;
@@ -789,12 +806,89 @@ button.navigation-link-user {
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5Z' fill='%233F5E72'/%3E%3C/svg%3E");
 }
 
-.control-input:checked + .control-label::before {
+.control-input[type="checkbox"]:checked + .control-label::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath fill='%233F5E72' d='m15 5-6.5 7.4-3.4-3.9L4 9.7l4.5 5.2 7.7-8.6z'/%3E%3C/svg%3E");
 }
 
 .right-filter {
   width: 549px;
   display: flex;
-  gap: 70px;
+}
+
+.right-filter .catalog-filter-group {
+  width: 288px;
+  margin-right: 70px;
+}
+
+.right-filter .catalog-filter-list {
+  display: flex;
+  gap: 2px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.right-filter .control-input:not([type="range"]) {
+  width: 143px;
+  height: 48px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 20px;
+}
+
+.control-input::-webkit-outer-spin-button,
+.control-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.right-filter .control-input:not([type="range"])::placeholder {
+  text-align: right;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 13px 20px;
+}
+
+.control-input[type="range"] {
+  margin-top: 36px;
+  width: 288px;
+}
+
+.control-input[name="price-low"] {
+  border-radius: 4px 0 0 4px;
+}
+
+.control-input[name="price-high"] {
+  border-radius: 0 4px 4px 0;
+}
+
+.right-filter .control {
+  position: relative;
+  display: block;
+}
+
+.control-input[type="number"] {
+  padding-left: 40px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.control.low::after,
+.control.high::after {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  color: #000;
+  opacity: 0.3;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.control.low::after {
+  content: 'от';
+}
+
+.control.high::after {
+  content: 'до';
 }

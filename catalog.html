@@ -156,19 +156,23 @@
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="number" name="price-low" />
-                  <span class="control-label">от</span>
+                <label class="control low">
+                  <input
+                    class="control-input"
+                    type="number"
+                    name="price-low"
+                    value="0"
+                  />
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label class="control high">
                   <input
                     class="control-input"
                     type="number"
                     name="price-high"
+                    value="9000"
                   />
-                  <span class="control-label">до</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
@@ -301,25 +305,14 @@
         </ul>
       </section>
 
-      <section class="newsletter">
+      <section class="newsletter newsletter-inner">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form
-          class="newsletter-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
+        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">
             <span class="visually-hidden">Ваш email</span>
           </label>
-          <input
-            type="email"
-            id="newsletter-email"
-            name="newsletter-email"
-            placeholder="Ваш e-mail"
-          />
+          <input class="newsletter-email-input" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail">
           <button class="button submit-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -333,16 +326,19 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://vk.com/htmlacademy">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="14" fill="none" viewBox="0 0 24 14"><path fill="#83b3d3" fill-rule="evenodd" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.16 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.53-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93" clip-rule="evenodd"/></svg>
               <span class="visually-hidden">ВК</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://t.me/htmlacademy">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none" viewBox="0 0 18 16"><path fill="#83b3d3" d="M16.79.1.84 6.25c-1.09.43-1.08 1.04-.2 1.31l4.1 1.28 9.47-5.98c.44-.27.85-.12.52.18L7.05 9.96l-.28 4.22c.41 0 .6-.19.83-.41l1.99-1.93 4.13 3.05c.77.42 1.31.2 1.5-.7l2.72-12.8c.28-1.12-.43-1.62-1.16-1.3"/></svg>
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="22" height="17" fill="none" viewBox="0 0 22 17"><path fill="#83b3d3" d="M18.6 0H3.18C1.31 0 0 1.6 0 3.4v10.1C0 15.4 1.31 17 3.17 17h15.66c1.64 0 3.17-1.6 3.17-3.4V3.4C21.78 1.6 20.47 0 18.6 0M7.67 12.54V4.46L15 8.5z"/></svg>
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
@@ -359,6 +355,7 @@
             <span class="visually-hidden">Переход на страницу HTML Academy</span>
             <img src="images/logo-html-academy.svg" width="115" height="33" alt="Логотип HTML Academy" />
           </a>
+        </p>
       </section>
       </div>
     </footer>
