@@ -313,6 +313,60 @@ button.navigation-link-user {
   cursor: default;
 }
 
+button.navigation-link-user:hover,
+button.navigation-link-user:focus,
+.hotel-search-button:hover,
+.hotel-search-button:focus,
+.button-show-more:hover,
+.button-show-more:focus {
+  background-color: #615048;
+}
+
+.submit-button:hover,
+.submit-button:focus,
+.apply-filter-button:hover,
+.apply-filter-button:focus,
+.button-favorite:hover,
+.button-favorite:focus,
+.pagination-link:not(.pagination-current):not(.pagination-gap):hover,
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.button-favorite-active:hover,
+.button-favorite-active:focus {
+  background-color: #6C9E42;
+}
+
+.reset-filter-button:hover,
+.breadcrumbs-link:hover {
+  opacity: 60%;
+}
+
+.reset-filter-button:focus {
+  border: 3px solid #83B3D3;
+}
+
+.button:active {
+  color: #ffffff30;
+}
+
+.breadcrumbs-link:active {
+  opacity: 30%;
+}
+
+.button:not(.reset-filter-button):disabled {
+  color: #FFF;
+  background-color: #E5E5E5;
+  cursor: default;
+}
+
+.reset-filter-button:disabled {
+  opacity: 10%;
+  cursor: default;
+}
+
+
 .page-container {
   width: 1200px;
   margin: 0 auto;
@@ -512,9 +566,8 @@ button.navigation-link-user {
   margin-bottom: 64px;
 }
 
-.advantages-item-description,
-.quality-item-description,
-.advantages-list li:not:is(:first-child, :last-child) {
+.advantages-list li:not(:first-child):not(:last-child) .advantages-item-description,
+.quality-item-description {
   color: #333;
 }
 
