@@ -193,16 +193,19 @@
       <div class="sorting">
         <p class="filter-result">Найдено гостиниц: <span class="filter-result-count">38</span></p>
         <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
+          <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="button button-view">
+        <a href="#" class="button button-view button-view-current">
+          <svg class="view-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M4 0H0v6h4zM16 0h-4v6h4zM10 0H6v6h4zM4 8H0v6h4zM16 8h-4v6h4zM10 8H6v6h4z"/></svg>
           <span class="visually-hidden">Показать таблицу</span>
         </a>
         <a class="button button-view" href="#">
+          <svg class="view-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M16 12H0v2h16zM14 2v6H2V2zm2-2H0v10h16z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
           <span class="visually-hidden">Показать слайдшоу</span>
         </a>
         <a class="button button-view" href="#">
+          <svg class="view-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M2 0H0v2h2zM16 0H4v2h12zM2 4H0v2h2zM16 4H4v2h12zM2 8H0v2h2zM16 8H4v2h12zM2 12H0v2h2zM16 12H4v2h12z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
           <span class="visually-hidden">Показать список</span>
         </a>
       </div>
@@ -223,7 +226,17 @@
             <button class="button button-favorite" type="button">
               В избранное
             </button>
-            <span class="rating-star">звездочки</span>
+            <span class="rating-star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="140" height="37" fill="none" viewBox="0 0 140 37">
+                <defs>
+                  <path id="star" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9z"/></defs>
+                  <use href="#star" x="0" y="10" class="active" />
+                  <use href="#star" x="24" y="10" class="active" />
+                  <use href="#star" x="48" y="10" class="active" />
+                  <use href="#star" x="72" y="10" class="active" />
+                  <use href="#star" x="96" y="10" class="disabled" />
+              </svg>
+            </span>
             <p class="button button-rating">Рейтинг: 8,5</p>
           </li>
           <li class="hotel-card">
@@ -244,7 +257,17 @@
             >
               В избранном
             </button>
-            <span class="rating-star">звездочки</span>
+            <span class="rating-star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="140" height="37" fill="none" viewBox="0 0 140 37">
+                <defs>
+                  <path id="star" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9z"/></defs>
+                  <use href="#star" x="0" y="10" class="active" />
+                  <use href="#star" x="24" y="10" class="active" />
+                  <use href="#star" x="48" y="10" class="active" />
+                  <use href="#star" x="72" y="10" class="active" />
+                  <use href="#star" x="96" y="10" class="disabled" />
+              </svg>
+            </span>
             <p class="button button-rating">Рейтинг: 9,2</p>
           </li>
           <li class="hotel-card">
@@ -262,7 +285,17 @@
             <button class="button button-favorite" type="button">
               В избранное
             </button>
-            <span class="rating-star">звездочки</span>
+            <span class="rating-star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="140" height="37" fill="none" viewBox="0 0 140 37">
+                <defs>
+                  <path id="star" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9z"/></defs>
+                  <use href="#star" x="0" y="10" class="active" />
+                  <use href="#star" x="24" y="10" class="active" />
+                  <use href="#star" x="48" y="10" class="active" />
+                  <use href="#star" x="72" y="10" class="disabled" />
+                  <use href="#star" x="96" y="10" class="disabled" />
+              </svg>
+            </span>
             <p class="button button-rating">Рейтинг: 6,9</p>
           </li>
           <li class="hotel-card">
@@ -280,7 +313,17 @@
             <button class="button button-favorite" type="button">
               В избранное
             </button>
-            <span class="rating-star">звездочки</span>
+            <span class="rating-star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="140" height="37" fill="none" viewBox="0 0 140 37">
+                <defs>
+                  <path id="star" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9z"/></defs>
+                  <use href="#star" x="0" y="10" class="active" />
+                  <use href="#star" x="24" y="10" class="active" />
+                  <use href="#star" x="48" y="10" class="disabled" />
+                  <use href="#star" x="72" y="10" class="disabled" />
+                  <use href="#star" x="96" y="10" class="disabled" />
+              </svg>
+            </span>
             <p class="button button-rating">Рейтинг: 5,0</p>
           </li>
         </ul>

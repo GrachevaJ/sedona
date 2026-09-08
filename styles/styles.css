@@ -242,14 +242,31 @@ button.navigation-link-user {
 }
 
 .button-view {
-  display: block;
-  box-sizing: border-box;
-  width: 16px;
-  height: 14px;
-  outline: 2px solid gray;
-  padding: 17px 16px;
-  border: 2px solid #E5E5E5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
+}
+
+.button-view-current {
+  border: 2px solid #000;
+}
+
+.button-view:not(:last-child) {
+  margin-right: 8px;
+}
+
+.view-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .button-show-more {
@@ -272,6 +289,19 @@ button.navigation-link-user {
   height: 36px;
 }
 
+.rating-star {
+  display: inline-block;
+  width: 140px;
+}
+
+.rating-star .active {
+  fill: #83b3d3;
+}
+
+.rating-star .disabled {
+  fill: transparent;
+}
+
 .button-rating {
   box-sizing: border-box;
   background-color: #f2f2f2;
@@ -280,6 +310,7 @@ button.navigation-link-user {
   font-weight: 400;
   text-align: center;
   padding-top: 9px;
+  cursor: default;
 }
 
 .page-container {
@@ -364,24 +395,37 @@ button.navigation-link-user {
 .sorting {
   margin: 0 70px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-  outline: 2px solid gray;
 }
 
 .filter-result {
   margin: 0;
   padding: 0;
-  margin-right: 200px;
+  width: 338px;
 }
 
 .select-control {
-  color: #333;
-  height: 49px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 292px;
-  margin-right: 70px;
+  margin-left: 200px;
+  margin-right: auto;
+  font-family: inherit;
+  color: #333;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 12px 18px;
+  padding-right: 40px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #FFF;
+  background-image: url("../images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
 }
+
 .inner-line {
   margin: 0 70px 40px;
   background-color: #e6e6e6;
@@ -553,7 +597,6 @@ button.navigation-link-user {
   margin: 0 70px 40px;
   gap: 20px;
   padding: 0;
-  outline: 2px solid gray;
 }
 
 .hotel-card {
