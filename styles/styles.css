@@ -49,7 +49,8 @@ body {
   overflow: hidden;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -190,7 +191,7 @@ button.navigation-link-user {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 14px 0 14px 20px
+  margin: 14px 0 14px 20px;
 }
 
 .hotel-search-button {
@@ -259,7 +260,7 @@ button.navigation-link-user {
 }
 
 .button-view:focus-visible {
-  border: 2px solid #68A2CA;
+  border: 2px solid #68a2ca;
 }
 
 .button-view:not(:last-child) {
@@ -336,12 +337,12 @@ button.navigation-link-user:focus,
 .button-favorite:focus-visible,
 .pagination-link:not(.pagination-current):not(.pagination-gap):hover,
 .pagination-link:focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-favorite-active:hover,
 .button-favorite-active:focus-visible {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .reset-filter-button:hover,
@@ -350,7 +351,7 @@ button.navigation-link-user:focus,
 }
 
 .reset-filter-button:focus-visible {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
 }
 
 .footer-social-icon {
@@ -359,7 +360,7 @@ button.navigation-link-user:focus,
 
 .footer-social-icon:hover,
 .footer-social-icon:focus-visible {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .footer-social-icon:active {
@@ -375,8 +376,8 @@ button.navigation-link-user:focus,
 }
 
 .button:not(.reset-filter-button):disabled {
-  color: #FFF;
-  background-color: #E5E5E5;
+  color: #fff;
+  background-color: #e5e5e5;
   cursor: default;
 }
 
@@ -384,7 +385,6 @@ button.navigation-link-user:focus,
   opacity: 10%;
   cursor: default;
 }
-
 
 .page-container {
   width: 1200px;
@@ -479,8 +479,6 @@ button.navigation-link-user:focus,
 }
 
 .select-control {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   width: 292px;
   margin-left: 200px;
@@ -493,7 +491,7 @@ button.navigation-link-user:focus,
   padding-right: 40px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  background-color: #FFF;
+  background-color: #fff;
   background-image: url("../images/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
@@ -502,7 +500,7 @@ button.navigation-link-user:focus,
 
 .select-control:hover,
 .select-control:focus-visible {
-  border-color: #68A2CA;
+  border-color: #68a2ca;
 }
 
 .select-control:disabled {
@@ -598,7 +596,9 @@ button.navigation-link-user:focus,
   margin-bottom: 64px;
 }
 
-.advantages-list li:not(:first-child):not(:last-child) .advantages-item-description,
+.advantages-list
+  li:not(:first-child):not(:last-child)
+  .advantages-item-description,
 .quality-item-description {
   color: #333;
 }
@@ -672,7 +672,7 @@ button.navigation-link-user:focus,
 }
 
 .quality-description {
-  margin-bottom: 64px;;
+  margin-bottom: 64px;
 }
 
 .hotel-list {
@@ -725,7 +725,7 @@ button.navigation-link-user:focus,
 }
 
 .newsletter-index {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   background-image: url(../images/subscribe.jpg);
   box-sizing: border-box;
@@ -734,7 +734,7 @@ button.navigation-link-user:focus,
 }
 
 .newsletter-index .newsletter-description {
-  color: #FFF;
+  color: #fff;
   margin: 20px 0 54px;
   padding: 0 362.5px;
 }
@@ -750,7 +750,7 @@ button.navigation-link-user:focus,
 }
 
 .newsletter-inner .newsletter-email-input {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .hotel-search-button,
@@ -922,7 +922,7 @@ button.navigation-link-user:focus,
 }
 
 .control-label::before {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   position: absolute;
@@ -936,7 +936,7 @@ button.navigation-link-user:focus,
 }
 
 .control-radio::before {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   position: absolute;
@@ -986,7 +986,6 @@ button.navigation-link-user:focus,
 
 .control-input::-webkit-outer-spin-button,
 .control-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
   margin: 0;
 }
 
@@ -1026,7 +1025,7 @@ button.navigation-link-user:focus,
 }
 
 .control-input:focus-visible + .control-label::before {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .control-label:active {
@@ -1045,17 +1044,17 @@ button.navigation-link-user:focus,
 }
 
 .control.low::after {
-  content: 'от';
+  content: "от";
 }
 
 .control.high::after {
-  content: 'до';
+  content: "до";
 }
 
 .control-input[type="number"]:hover {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .control-input[type="number"]:focus-visible {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
