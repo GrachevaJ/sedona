@@ -252,8 +252,14 @@ button.navigation-link-user {
   border-radius: 4px;
 }
 
-.button-view-current {
+.button-view-current,
+.button-view:hover,
+.button-view:active {
   border: 2px solid #000;
+}
+
+.button-view:focus-visible {
+  border: 2px solid #68A2CA;
 }
 
 .button-view:not(:last-child) {
@@ -323,18 +329,18 @@ button.navigation-link-user:focus,
 }
 
 .submit-button:hover,
-.submit-button:focus,
+.submit-button:focus-visible,
 .apply-filter-button:hover,
-.apply-filter-button:focus,
+.apply-filter-button:focus-visible,
 .button-favorite:hover,
-.button-favorite:focus,
+.button-favorite:focus-visible,
 .pagination-link:not(.pagination-current):not(.pagination-gap):hover,
-.pagination-link:focus {
+.pagination-link:focus-visible {
   background-color: #68A2CA;
 }
 
 .button-favorite-active:hover,
-.button-favorite-active:focus {
+.button-favorite-active:focus-visible {
   background-color: #6C9E42;
 }
 
@@ -343,8 +349,21 @@ button.navigation-link-user:focus,
   opacity: 60%;
 }
 
-.reset-filter-button:focus {
+.reset-filter-button:focus-visible {
   border: 3px solid #83B3D3;
+}
+
+.footer-social-icon {
+  fill: #83b3d3;
+}
+
+.footer-social-icon:hover,
+.footer-social-icon:focus-visible {
+  fill: #68A2CA;
+}
+
+.footer-social-icon:active {
+  opacity: 30%;
 }
 
 .button:active {
@@ -478,6 +497,19 @@ button.navigation-link-user:focus,
   background-image: url("../images/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
+  cursor: pointer;
+}
+
+.select-control:hover,
+.select-control:focus-visible {
+  border-color: #68A2CA;
+}
+
+.select-control:disabled {
+  border-color: #000000;
+  color: #000000;
+  opacity: 30%;
+  cursor: default;
 }
 
 .inner-line {
@@ -741,6 +773,25 @@ button.navigation-link-user:focus,
   margin: 0 41.5px;
 }
 
+.footer-contacts-address-phone:hover,
+.footer-contacts-address-phone:focus-visible {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:active,
+.about-link svg:active {
+  opacity: 30%;
+}
+
+.about-link svg {
+  fill: #000;
+}
+
+.about-link svg:hover,
+.about-link svg:focus-visible {
+  fill: #756157;
+}
+
 .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
@@ -970,6 +1021,18 @@ button.navigation-link-user:focus,
   box-sizing: border-box;
 }
 
+.control-label:hover {
+  opacity: 60%;
+}
+
+.control-input:focus-visible + .control-label::before {
+  outline: 3px solid #83B3D3;
+}
+
+.control-label:active {
+  opacity: 30%;
+}
+
 .control.low::after,
 .control.high::after {
   position: absolute;
@@ -987,4 +1050,12 @@ button.navigation-link-user:focus,
 
 .control.high::after {
   content: 'до';
+}
+
+.control-input[type="number"]:hover {
+  background-color: #E5E5E5;
+}
+
+.control-input[type="number"]:focus-visible {
+  outline: 3px solid #83B3D3;
 }
