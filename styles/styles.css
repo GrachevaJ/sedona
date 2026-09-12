@@ -975,7 +975,7 @@ button.navigation-link-user:focus,
   flex-wrap: wrap;
 }
 
-.right-filter .control-input:not([type="range"]) {
+.right-filter .control-input {
   width: 143px;
   height: 48px;
   border: none;
@@ -986,19 +986,48 @@ button.navigation-link-user:focus,
 
 .control-input::-webkit-outer-spin-button,
 .control-input::-webkit-inner-spin-button {
+  appearance: none;
   margin: 0;
 }
 
-.right-filter .control-input:not([type="range"])::placeholder {
+.right-filter .control-input::placeholder {
   text-align: right;
   font-size: 18px;
   line-height: 24px;
   padding: 13px 20px;
 }
 
-.control-input[type="range"] {
+.control-range {
   margin-top: 36px;
   width: 288px;
+  position: relative;
+  height: 4px;
+  background-color: #FFFFFF30;
+}
+
+.range-bar {
+  position: absolute;
+  background-color: #FFF;
+  height: 4px;
+}
+
+.range-toggle {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #FFF;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
 }
 
 .control-input[name="price-low"] {
@@ -1055,6 +1084,15 @@ button.navigation-link-user:focus,
   background-color: #e5e5e5;
 }
 
-.control-input[type="number"]:focus-visible {
+.control-input:focus-visible {
+  background-color: #e5e5e5;
   outline: 3px solid #83b3d3;
+}
+
+.range-toggle:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
 }
