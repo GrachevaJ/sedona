@@ -307,6 +307,7 @@ button.navigation-link-user {
 .rating-star {
   display: inline-block;
   width: 140px;
+  height: 37px;
 }
 
 .rating-star .active {
@@ -704,7 +705,7 @@ button.navigation-link-user:focus,
 }
 
 .hotel-card {
-  border: 1px solid #e6e6e6;
+  outline: 1px solid #e6e6e6;
   border-radius: 4px;
   box-sizing: border-box;
   padding: 20px;
@@ -818,6 +819,10 @@ button.navigation-link-user:focus,
 
 .catalog-filter-list {
   line-height: 23px;
+}
+
+.range-bar {
+  margin-top: 5px;
 }
 
 .pagination-link {
@@ -1063,7 +1068,7 @@ button.navigation-link-user:focus,
 }
 
 .control-input[type="number"] {
-  padding-left: 40px;
+  padding-right: 40px;
   height: 48px;
   box-sizing: border-box;
 }
