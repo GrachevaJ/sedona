@@ -114,6 +114,7 @@ li {
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   width: 268px;
   margin-right: 70px;
   margin-left: 284px;
@@ -188,8 +189,8 @@ li {
 button.navigation-link-user {
   color: #fff;
   background-color: #756157;
-  width: 160px;
-  height: 36px;
+  min-width: 160px;
+  min-height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -821,7 +822,7 @@ button.navigation-link-user:focus,
   line-height: 23px;
 }
 
-.range-bar {
+.right-filter .catalog-filter-item:last-child {
   margin-top: 5px;
 }
 
@@ -1166,7 +1167,7 @@ button.navigation-link-user:focus,
 
 .field-group {
   display: flex;
-  margin-bottom: 48px;
+  margin-bottom: 46px;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -1208,7 +1209,7 @@ button.navigation-link-user:focus,
   border-radius: 4px;
   background-color: #f2f2f2;
   background-image: url("../images/icon-calendar.svg");
-  background-size: 20px 20px;
+  background-size: 16px 15px;
   background-repeat: no-repeat;
   background-position: right 22px center;
 }
@@ -1219,7 +1220,7 @@ button.navigation-link-user:focus,
   font-weight: 400;
   margin: 0;
   position: absolute;
-  top: 55px;
+  top: 52px;
   left: 157px;
 }
 
@@ -1273,7 +1274,7 @@ button.navigation-link-user:focus,
 
 .tooltip-text {
   position: absolute;
-  top: 41px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #333333;
@@ -1283,10 +1284,11 @@ button.navigation-link-user:focus,
   font-weight: normal;
   text-transform: none;
   text-align: left;
-  padding: 15px 18px 18px 22px;
+  padding: 18px 18px 18px 22px;
   border-radius: 10px;
   display: none;
   width: 256px;
+  min-height: 143px;
 }
 
 .tooltip-text::before {
@@ -1312,6 +1314,7 @@ button.navigation-link-user:focus,
   line-height: 24px;
   color: #ffffff;
   background-color: #83B3D3;
+  border-radius: 10px;
 }
 
 .wrapper-field-peoples .field-name {
